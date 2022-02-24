@@ -1,8 +1,8 @@
-# Elastic Python Workshop #2 
+# Elastic Python workshop #2 
 
-## objects, classes, and how to call them
+## APIs, classes, and how to call them
 
-You can find here the code in full length for the workshop [Elastic Python Workshop #2 – useful classes for admins](https://cdax.ch/2022/02/24/elasticsearch-python-workshop-2-objects-classes-and-how-to-call-them/)
+You can find here the code in full length for the workshop [Elastic Python Workshop #2 – APIs, classes, and how to call them](https://cdax.ch/2022/02/24/elasticsearch-python-workshop-2-objects-classes-and-how-to-call-them/)
 
 ```
 from elasticsearch import Elasticsearch
