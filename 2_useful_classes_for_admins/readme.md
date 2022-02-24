@@ -2,7 +2,7 @@
 
 ## useful classes for admins 
 
-You can find here the code in full length for the workshop [Elastic Python Workshop #2 – useful classes for admins]()
+You can find here the code in full length for the workshop [Elastic Python Workshop #2 – useful classes for admins](https://cdax.ch/2022/02/24/elasticsearch-python-workshop-2-objects-classes-and-how-to-call-them/)
 
 ```
 from ssl import create_default_context
@@ -13,6 +13,11 @@ api_key='aC1wNUYzOEJCWV9zaUd4ZW1PMkg6REFfQ29JcDFRSjJMaEhvbDMyWElvZw=='
 context = create_default_context(cafile='/home/pascal/python_es_client.pem')
 es = Elasticsearch(["https://srvelk8:9200"], ssl_context=context, api_key=api_key)
 es.cat.nodes()
+```
+
+```
+from elasticsearch import Elasticsearch
+es = Elasticsearch(["https://username:password@srvelk:9200"], verify_certs=False)
 ```
 ## pretty print
 
@@ -72,3 +77,5 @@ transform                                   <elasticsearch.client.transform.Tran
 watcher                                         <elasticsearch.client.watcher.WatcherClient
 xpack                                               <elasticsearch.client.xpack.XPackClient
 ```
+
+
