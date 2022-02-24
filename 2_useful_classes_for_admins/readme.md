@@ -13,8 +13,8 @@ es = Elasticsearch(["https://username:password@srvelk:9200"], verify_certs=False
 ### Create an index and a document
 
 ```
-status = es.create(index='testidx', id=1, document='{"item": "content"}')
-print(json.dumps(status, indent=4))
+response = es.create(index='testidx', id=1, document='{"item": "content"}')
+print(json.dumps(response, indent=4))
 ```
 
 > {
@@ -32,7 +32,7 @@ print(json.dumps(status, indent=4))
  }
 
 ```
-if status['result'] == 'created':
+if response['result'] == 'created':
    print("document created")
 ```
 
@@ -40,11 +40,11 @@ if status['result'] == 'created':
 
 
 ```
-status = es.get(index='textidx', id=1)
-print(json.dumps(status, indent=4))
+response = es.get(index='testidx', id=1)
+print(json.dumps(response, indent=4))
 ```
 > {
-    "_index": "textidx",
+    "_index": "testidx",
     "_id": "1",
     "_version": 1,
     "_seq_no": 0,
